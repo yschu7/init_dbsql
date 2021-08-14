@@ -918,6 +918,9 @@ COMMIT;
 /*************** Verification ****************/
 /*********************************************/
 
+SET TERMOUT ON
+SET ECHO ON
+
 SELECT 'Verfification:' AS "Verification" FROM regions WHERE region_id = 'EU';
 
 SELECT 'regions' AS "Table", 7 AS "provided", COUNT(1) AS "actual" FROM regions
